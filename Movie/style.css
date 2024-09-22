@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Comfortaa', display;
+}
+
+/* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Roboto', sans-serif;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --TextColor: #fff;
+    --NavColor: #000;
+    --OrangeColor: #ffa500; 
+    --BTN: #F18128;
+    --SecBTN: #040D1F;
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul, a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--TextColor);
+}
+
+.div_nav_before_nav{
+    background: url(images/Rectangle\ 1.png) no-repeat center / cover;
+
+    .center_content{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        max-width: 280px;
+        width: 100%;
+        padding: 20px 0;
+        p, i{
+            color: var(--TextColor);
+        }
+
+        i{
+            font-size: 50px;
+        }
+    }
+}
+
+/* NAV */
+
+nav{
+    background: var(--NavColor);
+
+    .nav_list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2{
+            color: var(--TextColor);
+
+            span{
+                font-size: 60px;
+                font-weight: 900;
+                color: var(--OrangeColor);
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            a:hover{
+                color: var(--OrangeColor);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+/* HEADER */
+
+header{
+    background: url(images/kong_skull_island\ 1\ \(1\).png) no-repeat center/cover;
+    height: 640px;
+
+    .header_list{
+        max-width: 600px;
+        width: 100%;
+        padding-top: 160px;
+        h4{
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--TextColor);
+        }
+        p{
+            color: var(--TextColor);
+            margin-top: 30px;
+        }
+        .buttons{
+            margin-top: 50px;
+
+            .btn{
+                background: var(--BTN);
+                padding: 17px 48px;
+                border-radius: 4px;
+                color: var(--SecBTN);
+                font-style: 14px;
+                font-weight: 500;
+                font-family: sans-serif;
+            }
+            .btn_2{
+                background: var(--SecBTN);
+                padding: 17px 48px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+/* MAIN */
+
+.section_films{
+    background: var(--SecBTN);
+    height: 600px;
+
+    .card_films{
+        padding-top: 60px;
+        p{
+            font-size: 36px;
+            color: var(--TextColor);
+
+            a:hover{
+                color: var(--BTN);
+                transition: 0.5s;
+
+            }
+        }
+
+        .film_card{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding-top: 66px;
+
+            /* .img_card_films:hover::after{
+                position: absolute;
+                content: 'At first glance, you can decide that Wakanda is an ordinary territory of wild Africa, but this is not so. Here, in the bowels of the desert lands, there are hidden deposits of a unique metal capable of absorbing...';
+                transition: 0.5s;
+                top: 170px;
+                left: 30px;
+                max-width: 220px;
+                width: 100%;
+                color: var(--TextColor);
+            } */
+        }
+    }
+}
+
+/* MARVEL */
+
+.marvel_studios{
+    background: url(images/Untitled\ \(1\).png)no-repeat center/cover;
+    height: 500px;
+
+    .marvel_back{
+        background: url(images/Rectangle\ 79.png)no-repeat center/cover;
+        height: 500px;
+    }
+    .marvel{
+        color: var(--TextColor);
+        padding-top: 42px;
+        p{
+            max-width: 550px;
+            width: 100%;
+            margin-top: 46px;
+            color: var(--NavColor);
+            font-size: 18px;
+        }
+
+        .buttons{
+            margin-top: 60px;
+            .btn{
+                background: var(--BTN);
+                padding: 17px 48px;
+                border-radius: 4px;
+                color: var(--SecBTN);
+                font-style: 14px;
+                font-weight: 500;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
+
+/* COLECTS */
+
+.third_section{
+    background: var(--SecBTN);
+    p{
+        font-size: 36px;
+        color: var(--TextColor);
+        padding-top: 46px;
+        a:hover{
+            color: var(--BTN);
+            transition: 0.5s;
+        }
+    }
+    .collect_movie{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 63px;
+    }
+}
+
+/* SERIES */
+
+.series_content{
+    background: var(--SecBTN);
+    height: 1100px;
+
+    .series_movies{
+        padding-top: 62px;
+        p{
+            font-size: 36px;
+
+            a:hover{
+                color: var(--BTN);
+                transition: 0.5s;
+            }
+        }
+    }
+    .item{
+        min-height: 200px;
+        
+        font-size: 30px;
+        color: red;
+        img{
+            width: 100%;
+        }
+    
+    }
+    
+    .grid{
+        padding-top: 66px;
+        gap: 10px;
+        display: grid;
+       
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    .item:nth-of-type(1){
+        grid-column:4 span ;
+        grid-row: 2 span;
+    }
+    
+    .item:nth-of-type(2){
+        grid-row: 2 span;
+        grid-column: 2 span;
+        max-height: 540px;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background: var(--BTN);
+    height: 80px;
+    color: var(--TextColor);
+
+    .footer_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+    }
+}
